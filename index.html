@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="cover day_mode">
+            <div class="menu">
+                <div class="menu_title">یادداشت های من</div>
+                <ul>
+                    <li class="open_del_List">اخیرا حذف شده</li>
+                    <li class="open_like_list">مورد علاقه ها</li>
+                    <li class="open_setting_list">تنظیمات</li>
+                </ul>
+            </div>
+            <div class="deleted_list">
+                <div class="DEL_header">
+                    <div>
+                        <div class="DEL_close"><i class="material-icons">arrow_forward</i></div>
+                        <div class="DEL_title">حذف شده ها</div>
+                    </div>
+                </div>
+                <div class="DEL_body">
+                    <ul>
+
+                    </ul>
+                </div>
+                <div class="DEL_footer">
+                    <button class="Clear_del_list">حذف همه</button>
+                    <button class="recovery_all">بازیابی همه</button>
+                </div>
+            </div>
+            <div class="settong_list">
+                <div class="STG_header">
+                    <div>
+                        <div class="STG_close"><i class="material-icons">arrow_forward</i></div>
+                        <div class="STG_title">تنظیمات</div>
+                    </div>
+                </div>
+                <div class="STG_body">
+                    <div class="STG_body_head">رنگ تم</div>
+                    <div class="row" style="border: none;">
+                        <span>حالت شب/روز</span>
+                        <div class="checkbox_cover">
+                            <input type="checkbox" class="checkbox_them">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="STG_body_head">تنظیمات پیشرفته</div>
+                    <div class="row">
+                        <span>اندازه فونت</span>
+                        <input type="range" class="font_size" min="0" max="5">
+                    </div>
+                    <div class="row">
+                        <span>ضخامت نوشته ها</span>
+                        <input type="range" class="font_weight" min="0" max="5">
+                    </div>
+                    <div class="row">
+                        <span>رنگ نوشته ها</span>
+                        <input type="color" class="text_color">
+                    </div>
+                    <div class="row">
+                        <span>پس زمینه نوشته ها</span>
+                        <input type="color" class="bg_color">
+                    </div>
+                </div>
+
+                <div class="STG_footer">
+                    <button class="def_setting">تنظیمات پیشفرض</button>
+                </div>
+            </div>
+            <div class="like_list">
+                <div class="LK_header">
+                    <div>
+                        <div class="LK_close"><i class="material-icons">arrow_forward</i></div>
+                        <div class="LK_title">مورد علاقه ها</div>
+                    </div>
+                </div>
+                <div class="LK_body">
+                    <ul>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="note_edit">
+                <div class="NE_header">
+                    <div>
+                        <div class="NE_close"><i class="material-icons">arrow_forward</i></div>
+                        <div class="NE_title">یادداشت</div>
+                    </div>
+                    <div>
+                        <div class="NE_save"><i class="material-icons">save</i></div>
+                        <div class="NE_more_vert">
+                            <div class="NE_show_items_btn">
+                                <i class="material-icons" style="font-size: 19px;">more_vert</i>
+                            </div>
+                            <ul>
+                                <li class="NE_del_node">حذف یادداشت</li>
+                                <li class="NE_delete">حذف کامل</li>
+                                <li class="NE_recovery">بازیابی</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="NE_body">
+                    <input type="text" class="NE_topic" placeholder="موضوع یادداشت">
+                    <div class="NS_text">
+                        <pre contenteditable="true" class="pre"></pre>
+                    </div>
+                </div>
+                <div class="NS_footer">
+                    <button class="NE_cleae_all">پاک کردن همه</button>
+                    <button class="NE_copy_all">کپی همه</button>
+                </div>
+            </div>
+            <div class="header">
+                <div class="more_vert">
+                    <div class="show_items_btn">
+                        <i class="material-icons" style="font-size: 19px;">more_vert</i>
+                    </div>
+                    <ul>
+                        <li class="window_view">نمایش پنجره‌ای</li>
+                        <li class="row_view">نمایش افقی</li>
+                        <li class="del_all">حذف همه</li>
+                    </ul>
+                </div>
+                <div>
+                    <span>همه یادداشت ها</span>
+                    <div class="munu_btn"><i class="material-icons">menu</i></div>
+                </div>
+            </div>
+            <div class="search_box">
+                <input type="search" class="search" placeholder="جست و جو کنید...">
+                <i class="material-icons search_icon">search</i>
+            </div>
+            <div class="works_body">
+                <div class="WK_add_box">
+                    <input type="text" class="WK_add_input" placeholder="متنی وارد کنید....">
+                    <button class="WK_add_btn">+</button>
+                </div>
+                <ul></ul>
+            </div>
+            <div class="body">
+                <ul></ul>
+                <div class="add_new_btn">
+                    <i class="material-icons" style="font-size: 16px;">create</i>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer_btn open_works_page">کار ها</div>
+                <div class="footer_btn open_notes_page">یادداشت ها</div>
+            </div>
+        </div>
+    </div>
+</body>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="js/script.js"></script>
+</html>
